@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-celestial-white: #FFFFFF;
+  --color-celestial-offwhite: #F8FAFC;
+  --color-celestial-blue-50: #EFF6FF;
+  --color-celestial-blue-100: #DBEAFE;
+  --color-celestial-blue-500: #3B82F6;
+  --color-celestial-blue-600: #2563EB;
+  --color-celestial-blue-900: #1E3A8A;
+  --color-celestial-blue-950: #1E293B;
+  
+  --color-celestial-gold-50: #FEFCE8;
+  --color-celestial-gold-100: #FEF08A;
+  --color-celestial-gold-500: #CA8A04;
+  --color-celestial-gold-600: #CA8A04;
+  
+  --color-celestial-gray-200: #E2E8F0;
+  --color-celestial-gray-500: #64748B;
+  --color-celestial-gray-800: #1E293B;
+
+  --animate-fade-in: fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: var(--color-celestial-offwhite);
+  color: var(--color-celestial-gray-800);
+}
+
+/* Custom Scrollbar Styles for premium aesthetic feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

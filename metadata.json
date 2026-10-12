@@ -1,0 +1,6 @@
+{
+  "name": "Sanctuary Modern",
+  "description": "An elegant, low-density operational and administrative dashboard for parish committee operations, sacramental registries, and liturgical workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
